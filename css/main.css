@@ -1,0 +1,49 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #3456b3 16%, #380036 84%);
+  font-size: 3rem;
+}
+
+.gradient {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(315deg, #e9af3a 16%, #d36435 84%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) minmax(0, 500px) minmax(20px, 1fr);
+}
+
+.wrapper h1 {
+  grid-column: 2/3;
+}
+
+.wrapper p {
+  grid-column: 2/3;
+}
+
+.h1-margin {
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=main.css.map */
